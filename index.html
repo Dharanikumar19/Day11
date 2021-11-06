@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS</title>
+</head>
+<style>
+h3{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+
+    table,td,th,tr{
+        border:1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+    }
+    .formguide{
+        border: 3px solid black;
+        width: 430px;
+        height: 330px;
+    }
+    .textline {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+.firstname{
+  float: left;
+  padding-right: 4%;
+}
+</style>
+<body>
+<h1>HTML Task to know usage of basic tags.</h1>
+<h3>Quesion-1</h3>
+<p>a)Fix the bugs in below snippet</p>
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</div>
+<div>
+    Guvi Geek Network
+</div><br>
+
+<h3>Quesion-2</h3>
+<p>b)Try the below one</p>
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+<div>
+<div>
+    Guvi Geek Network
+</div><br>
+
+<h3>Question-3</h3> 
+<p>c)Design a contact us form with all fields as required</p><br>
+    <form>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br><br>
+        <label for="number">Mobile Number</label><br>
+        <input type="number" id="number" name="number" placeholder="Your Mobile number.." required><br><br>
+        <label for="gender">Gender</label><br>
+        <input type="text" id="gender" placeholder="Your Gender.." required><br><br>
+        <label for="subject">Subject</label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.." required></textarea><br>
+        <input type="submit" value="Submit">
+ </form><br>
+
+
+<h3>Question-4</h3> 
+<p>d)Use certain HTML elements to display the following in a HTML page</p>
+<ul>
+    <li>Programming Language</li>
+  <ul type="circle">
+      <li>Javascript</li>
+   <ol type="a">
+       <li>Angular</li>
+       <li>React</li>
+       <li>Vue.js</li>
+   </ol>
+</ul>
+   <ul type="circle">
+       <li>Phython</li>
+     <ol type="a">
+        <li>Django Framework</li>
+        <li>Flask Framework</li>
+     </ol>
+    </ul>
+    <ul type="circle">
+        <li>Java</li>
+        <ol type="a">
+            <li>Spring</li>
+            <li>Maven</li>
+            <li>Hibernate</li>
+         </ol>
+    </ul>
+    <li>Database</li>
+    <ul type="circle">
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>Cansandra</li>
+    </ul>
+</ul>
+<br>
+<h3> Question-5</h3>
+<p>e)Create an element that helps you to open the https://google.com in separate new tab</p>
+<a href="https://google.com" target="_blank">Google</a><br><br>
+
+
+<h3> Question-6</h3>
+<p>f)In the form, add two radio buttons with grouping them for employee type(Salaried and own business)</p>
+<form>
+            <input type="radio" name="format" id="txt" value="txt" checked>
+            <label for="txt">Salaried</label>
+            <input type="radio" name="format" id="business" value="csv">
+            <label for="business">own business</label>
+</form>
+<br>
+<h3> Question-7</h3>
+<p>g)Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)</p>
+<form class="formguide">
+<h2 style="color:white; text-align: center;"><span style="background-color: red;">Yes! I want to subscribe to Mag-O-Zine</span></h2>
+<div class="firstname">
+<input type="text" class="textline" name="fname" id="fname"><br>
+<label for="fname">firstname</label>
+</div>
+<div class="lastname">
+<input type="text" class="textline" name="lname" id="lname"><br>
+<label for="lname">lastname</label> 
+</div>
+<input type="text" class="textline" name="address" id="address"><br>
+<label for="address">Address</label><br>
+<div class="firstname">
+    <input type="text" class="textline" name="address" id="address"><br>
+    <label for="address">City</label>
+    </div>
+    <input type="text" class="textline" name="address" id="address"><br>
+    <label for="address">State</label><br><br>
+<div>
+<label>Subscribe to:</label>
+<input type="checkbox" name="format" id="txt" value="text" checked>
+<label>1 year ($19.95)</label>
+<input type="checkbox" name="format" id="txt" value="text">
+<label>2 year ($35.00)</label>
+</div><br>
+<label>Send me more information about:</label><br>
+<input type="checkbox" name="format" id="txt" value="text" checked>
+<label>Computer-Zine</label><br>
+<input type="checkbox" name="format" id="txt" value="text">
+<label>Fishing-Zone</label><br>
+<input type="checkbox" name="format" id="txt" value="text">
+<label>Cat-O-Zine</label>
+</form><br>
+
+<h3>Question-8</h3>
+<p>h)Use the table tag to design given image</p>
+<table style="margin-top: 40px;">
+    <thead>
+        <tr>
+            <th rowspan="2">State of health</th>
+            <th colspan="2">Fasting Value</th>
+            <th>After Remaining</th>
+          </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <th>Minimum</th>
+            <th>Normal</th>
+            <th>2 hours of Eating</th>
+        </tr>
+        <tr>
+            <td>healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>  
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>  
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>more than 126</td>
+            <td>Not Applicable</td>
+            <td>More than 200</td>  
+        </tr>
+    </tbody>
+</table><br><br>
+
+<h3>Question-9</h3>
+<p>i)Write HTML input tags snippet to show default values for all Form elements.</p><br>
+
+<form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" value="John"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" value="wick"><br><br>
+    <input type="submit" value="Submit">
+  </form><br>
+
+<h3>Question-10</h3>
+<p>j)In your, HTML page add the below line and Highlight it without using any CSS</p><br>
+
+<ul>
+    <li><mark>"HTML & CSS is awesome"</mark></li>
+</ul><br>
+
+<h3>Question-11</h3>
+<p>k)Create an HTML page, which should contain all types of input elements</p><br>
+<form>
+<label>button</label>
+<input type="submit"><br><br>
+<label>checkbox</label>
+<input type="checkbox"><br><br>
+<label>choose color</label>
+<input type="color"><br><br>
+<label>Date</label>
+<input type="date"><br><br>
+<label>date-time</label>
+<input type="datetime-local"><br><br>
+<label>Email</label>
+<input type="email"><br><br>
+<label>File</label>
+<input type="file"><br><br>
+<label>Hidden</label>
+<input type="hidden"><br><br>
+<label>Image</label>
+<input type="image"><br><br>
+<label>Month</label>
+<input type="month"><br><br>
+<label>Number</label>
+<input type="number"><br><br>
+<label>Password</label>
+<input type="password"><br><br>
+<label>Radio</label>
+<input type="radio"><br><br>
+<label>Range</label>
+<input type="range"><br><br>
+<label>Reset</label>
+<input type="reset"><br><br>
+<label>Search</label>
+<input type="search"><br><br>
+<label>Submit</label>
+<input type="submit"><br><br>
+<label>Tel</label>
+<input type="tel"><br><br>
+<label>Text</label>
+<input type="text"><br><br>
+<label>Time</label>
+<input type="time"><br><br>
+<label>Url</label>
+<input type="url"><br><br>
+<label>week</label>
+<input type="week">
+</form><br>
+
+
+
+</body>
+</html>
